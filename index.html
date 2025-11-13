@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Del Campo al Emprendimiento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menú superior -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🌰 DERIVADOS DEL MANÍ</div>
+            <div class="menu">
+                <button class="menu-btn">Menú ▼</button>
+                <div class="dropdown">
+                    <a href="inicio.html">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="contactos.html">Contactos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Pantalla principal -->
+    <section class="hero">
+        <h1>DEL CAMPO AL EMPRENDIMIENTO</h1>
+        <h2>DERIVADOS DEL MANÍ</h2>
+        <div class="main-buttons">
+            <a href="inicio.html" class="btn">INICIO</a>
+            <a href="productos.html" class="btn">PRODUCTOS</a>
+            <a href="contactos.html" class="btn">CONTACTOS</a>
+        </div>
+    </section>
+
+    <script>
+        // Script para desplegar menú
+        const menuBtn = document.querySelector('.menu-btn');
+        const dropdown = document.querySelector('.dropdown');
+        menuBtn.onclick = () => dropdown.classList.toggle('show');
+    </script>
+</body>
+</html>

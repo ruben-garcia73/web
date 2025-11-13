@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Del Campo al Emprendimiento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">🌰 DERIVADOS DEL MANÍ</div>
+            <div class="menu">
+                <button class="menu-btn">Menú ▼</button>
+                <div class="dropdown">
+                    <a href="index.html">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="contactos.html">Contactos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="profiles">
+        <div class="profile">
+            <img src=".vscode/ruben.pnj.jpg"Ruben">
+            <div>
+                <h3>Rubén</h3>
+                <p>Encargado de innovación y marketing. Diseña nuevos derivados del maní y promueve su comercialización en ferias y redes sociales.</p>
+            </div>
+        </div>
+
+        <div class="profile">
+            <img src=".vscode/oliver.pnj.jpg"Oliver">
+            <div>
+                <h3>Oliver</h3>
+                <p>Emprendedor apasionado por los productos naturales. Se especializa en la selección y tostado del maní, garantizando calidad y sabor en cada producto</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const dropdown = document.querySelector('.dropdown');
+        menuBtn.onclick = () => dropdown.classList.toggle('show');
+    </script>
+</body>
+</html>

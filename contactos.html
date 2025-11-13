@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos | Del Campo al Emprendimiento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">🌰 DERIVADOS DEL MANÍ</div>
+            <div class="menu">
+                <button class="menu-btn">Menú ▼</button>
+                <div class="dropdown">
+                    <a href="index.html">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="contactos.html">Contactos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contactos">
+        <button class="contact-btn">🌐 Redes Sociales</button>
+        <div class="contact-info">
+            <p>TikTok: @Derivados_del mani</p>
+            <p>Facebook: Derivados del Maní</p>
+            <p>WhatsApp: +591 74446181</p>
+        </div>
+
+        <button class="contact-btn">📞 Llámame</button>
+        <div class="contact-info">
+            <p>Ruben: +591 74446181</p>
+            <p>Oliver: +591 63368573</p>
+        </div>
+
+        <button class="contact-btn">💬 Deja un mensaje</button>
+        <form class="message-form">
+            <input type="text" placeholder="Tu nombre" required>
+            <textarea placeholder="Escribe tu mensaje..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const dropdown = document.querySelector('.dropdown');
+        menuBtn.onclick = () => dropdown.classList.toggle('show');
+    </script>
+</body>
+</html>

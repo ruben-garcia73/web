@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Del Campo al Emprendimiento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">🌰 DERIVADOS DEL MANÍ</div>
+            <div class="menu">
+                <button class="menu-btn">Menú ▼</button>
+                <div class="dropdown">
+                    <a href="index.html">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="contactos.html">Contactos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="products">
+        <div class="product">
+            <div class="info">
+                <h3>turrones de Maní</h3>
+                <p>Natural sin conservantes muy nutritivos y hechos de mani .</p>
+            </div>
+            <img src=".vscode/turrones.pnj.jpg" alt="Mantequilla de Maní">
+        </div>
+
+        <div class="product reverse">
+            <img src=".vscode/galletas.pnj.jpg" alt="Barra de Maní">
+            <div class="info">
+                <h3>galletas de mani</h3>
+                <p>Hechas con maní tostado, harina y leche. Perfectas para deportistas y estudiantes.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const dropdown = document.querySelector('.dropdown');
+        menuBtn.onclick = () => dropdown.classList.toggle('show');
+    </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f9f5f0;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #8b4513;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu-btn {
+    background: #deb887;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    top: 40px;
+    z-index: 10;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background: #f5deb3;
+}
+
+.dropdown.show {
+    display: block;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #ffe5b4, #f4a460);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background: #8b4513;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a0522d;
+}
+
+/* PERFILES */
+.profiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.profile {
+    display: flex;
+    max-width: 800px;
+    background: white;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile div {
+    padding: 20px;
+}
+
+/* PRODUCTOS */
+.products {
+    padding: 40px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.product.reverse {
+    flex-direction: row-reverse;
+}
+
+.product img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.info {
+    max-width: 400px;
+}
+
+/* CONTACTOS */
+.contactos {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-btn {
+    background: #8b4513;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.message-form input, .message-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+.message-form button {
+    background: #a0522d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .product, .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product img, .profile img {
+        width: 90%;
+    }
+}
